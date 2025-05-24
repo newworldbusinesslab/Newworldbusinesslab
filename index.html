@@ -9,26 +9,106 @@
       font-family: Arial, sans-serif;
       background-color: #0d1117;
       color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #161b22;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav a {
+      color: #58a6ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .hero {
       text-align: center;
+      padding: 50px 20px;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+    .hero img {
+      max-width: 150px;
+      margin-bottom: 20px;
     }
-    p {
-      font-size: 1.25rem;
-      max-width: 600px;
+    section {
+      padding: 40px 20px;
+      border-top: 1px solid #30363d;
+    }
+    h2 {
+      color: #58a6ff;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: #0d1117;
+      border: 1px solid #30363d;
+      color: #fff;
+    }
+    form button {
+      background-color: #238636;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <h1>New World Business Lab</h1>
-  <p>Built from the ground up with cutting-edge AI. Launching a new era of entrepreneurship and economic empowerment.</p>
+  <header>
+    <img src="logo.png" alt="New World Business Lab Logo" style="height:40px;">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#case">Case Study</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <img src="logo.png" alt="Logo" />
+    <h1>New World Business Lab</h1>
+    <p>Built from the ground up with cutting-edge AI. Launching a new era of entrepreneurship and economic empowerment.</p>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>New World Business Lab is an AI-powered platform that helps anyone—especially those from underserved communities—launch real businesses from scratch. We automate the hardest parts and only get paid when you get funded.</p>
+  </section>
+
+  <section id="features">
+    <h2>Core Features</h2>
+    <ul>
+      <li>AI Business Idea Generator</li>
+      <li>Step-by-Step Business Builder</li>
+      <li>Automated Funding Applications</li>
+      <li>Social Media + Email Campaign Tools (LabMail)</li>
+      <li>Customer Service Bots</li>
+      <li>Investor Access & Pitch Tools</li>
+    </ul>
+  </section>
+
+  <section id="case">
+    <h2>Case Study Preview</h2>
+    <p>Founder Chey Smart built this platform two months after discovering AI—starting from scratch after 20 years in prison. With only $40 invested, he's already launched multiple businesses, a full website, and investor-ready proposals using AI alone.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Sign Up</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Message or Interest"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="video">
+    <h2>Video Campaign Teaser</h2>
+    <p>[Coming soon: A powerful video to launch this movement—featuring a mystery rapper, raw story, and global call to action.]</p>
+  </section>
 </body>
 </html>
